@@ -12,9 +12,6 @@ class ChartData:
         self.driver.get(url)
         sleep(5)
 
-        #Clicking the 5Y chart
-        self.driver.find_element_by_xpath(
-            "//div[contains(@class, 'tabs-1LGqoVz6')]/div[8]").click()
 
         exchange_symbol = self.driver.find_element_by_xpath(
             "//*[@id='anchor-page-1']/div/div[2]/div[1]/h1/div[2]").text
